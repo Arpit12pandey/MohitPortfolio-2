@@ -1,0 +1,177 @@
+:root {
+    --navy: #445e8e;
+    --gold:  gray;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--navy);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--navy);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+                url('professional-bg.jpg');
+    text-align: center;
+    
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--navy);
+    object-fit: cover;
+}
+
+.elevator-pitch {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Section Common Styles */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Experience Section */
+.internship-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.internship-table th, 
+.internship-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.internship-table th {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.certificate-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Accordion Styles */
+.accordion {
+    background: #f8f9fa;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .internship-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+.list-item{
+    padding: 5px;
+    margin: 5px;
+    transition: transform cubic-bezier(0.895, 0.03, 0.685, 0.22)s ease-in-out; 
+    color: white;
+}
+
+.list-item:hover{
+    background-color:  #023047;
+   border-radius: 10%;
+    transform: scale(1.3);
+    color:black;
+}
+.pic{
+    float: right;
+    
+}
+.boundary{
+    display: inline-block;
+        width: 3px;  
+        height: 25px;
+        color: gray;
+       
+        
+     
+}
+
+.links{
+    margin: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+ .elevator-pitch:hover {
+    
+    transform: scale(1.1);
+}

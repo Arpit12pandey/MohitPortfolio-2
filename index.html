@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Sharma - Legal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="list-item"><a href="#home">Home</a></li>
+            <li class="list-item"><a href="#about">About</a></li>
+            <li class="list-item"><a href="#experience">Experience</a></li>
+            <li class="list-item"><a href="#research">Research</a></li>
+            <li class="list-item"><a href="#achievements">Achievements</a></li>
+            <li class="list-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="pic">
+        <img src="assets/profile.jpg" alt="Mohit Sharma Professional Headshot" class="profile-img">
+    </div>
+        <h1>Mohit Sharma</h1> 
+        <div class="text">
+            <p>Penultimate year law student <span class="boundary">|</span>
+           Data Protection and Privacy Law Enthusiast</p>
+        </div>
+       <div class="links">
+        <a href="#elevator-pitch" class="elevator-pitch">Resume</a>
+        <a href="#elevator-pitch" class="elevator-pitch"> Letter of Recommendation</a>
+        <a href="#elevator-pitch" class="elevator-pitch">Elevator Pitch</a>
+       </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[Insert detailed About Me narrative here...]</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Internship Experience <small>1 year 4 months experience</small></h2>
+        
+        <table class="internship-table">
+            <!-- Table content here -->
+        </table>
+
+        <div class="accordion">
+            <!-- Accordion items for detailed internship info -->
+        </div>
+    </section>
+
+    <!-- Research & Publications -->
+    <section id="research">
+        <h2>Research & Publications</h2>
+        <div class="research-list">
+            <!-- Research items here -->
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul class="achievements-list">
+            <!-- Achievement items here -->
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mohit.sharma.01@symlaw.edu.in">mohit.sharma.01@symlaw.edu.in</a></p>
+        <p>Phone: <a href="tel:+919672584513">+91 9672584513</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/mohit-sharma-symlaw">Connect with Me</a></p>
+        <a href="mohit-sharma-cv.pdf" download class="elevator-pitch">Download CV</a>
+    </section>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
