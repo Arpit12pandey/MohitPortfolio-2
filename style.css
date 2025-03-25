@@ -104,13 +104,14 @@ section {
     margin: 5px;
     transition: transform cubic-bezier(0.895, 0.03, 0.685, 0.22)s ease-in-out; 
     color: white;
+    border-bottom: 0px solid white;
 }
 
 .list-item:hover{
-    background-color:  #023047;
-   border-radius: 10%;
+   
     transform: scale(1.3);
-    color:black;
+    border-bottom: 4px solid white;
+   
 }
 .pic{
     float: right;
@@ -290,6 +291,9 @@ body {
     h2{
         font-size: 20px; 
     }
+    .links{
+        gap: 8px;
+    }
 }
 
 /* Very Small Mobile Screens */
@@ -299,6 +303,9 @@ body {
     }
     h2{
         font-size: 16px; 
+    }
+    .links{
+        gap: 8px;
     }
 }
 
