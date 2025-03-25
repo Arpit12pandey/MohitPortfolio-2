@@ -41,6 +41,7 @@ body {
 
 /* Hero Section */
 .hero {
+    
     padding: 8rem 2rem 4rem;
     background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
                 url('professional-bg.jpg');
@@ -128,11 +129,11 @@ section {
 }
 
 .links{
-    margin: 2%;
+    
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     
 
 }
@@ -261,12 +262,7 @@ margin: 0.1rem;
         text-align: center;
         margin: 10px 0;
     }
-    .links{
-        flex-wrap: wrap;
-        flex-direction: column;
-       gap: 8px;
-       margin-left: 0px;
-    }
+   
     
 }
 /* Default Font Size */
@@ -282,12 +278,7 @@ body {
     h2{
         font-size: 28px; 
     }
-    .links{
-        flex-wrap: wrap;
-        flex-direction: column;
-       gap: 8px;
-       margin-left: 0px;
-    }
+   
 }
 
 /* Mobile Screens */
@@ -299,12 +290,15 @@ body {
         font-size: 20px; 
     }
     .links{
-        
-            flex-wrap: wrap;
-            flex-direction: column;
-           gap: 8px;
-           margin-left: 0px;
-    }
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hero{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+    
 }
 
 /* Very Small Mobile Screens */
@@ -318,8 +312,32 @@ body {
     .links{
         flex-wrap: wrap;
         flex-direction: column;
-       gap: 8px;
-       margin-left: 0px;
     }
+    .hero{
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 400px) {  
+    body {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 16px; 
+    }
+    .links{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .hero{
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+   
+    
 }
 
