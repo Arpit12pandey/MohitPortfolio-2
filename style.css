@@ -281,6 +281,11 @@ body {
     h2{
         font-size: 28px; 
     }
+    .links{
+        flex-wrap: wrap;
+        flex-direction: column;
+       gap: 8px;
+    }
 }
 
 /* Mobile Screens */
@@ -292,7 +297,11 @@ body {
         font-size: 20px; 
     }
     .links{
-        gap: 8px;
+        
+            flex-wrap: wrap;
+            flex-direction: column;
+           gap: 8px;
+        
     }
 }
 
@@ -305,7 +314,9 @@ body {
         font-size: 16px; 
     }
     .links{
-        gap: 8px;
+        flex-wrap: wrap;
+        flex-direction: column;
+       gap: 8px;
     }
 }
 
